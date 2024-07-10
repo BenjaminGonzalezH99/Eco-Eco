@@ -34,7 +34,7 @@ public class ProductoAlternativo {
     @CreationTimestamp
     private LocalDateTime fechaCreacion;
 
-    @JsonIgnore
+   @JsonIgnore
     @ManyToOne()
     @JoinColumn(name= "Prod_original_id")
     private ProductoOriginal productoOriginal;
