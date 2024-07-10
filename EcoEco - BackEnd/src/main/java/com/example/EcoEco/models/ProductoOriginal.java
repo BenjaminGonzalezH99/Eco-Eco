@@ -18,16 +18,19 @@ public class ProductoOriginal {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long idProductoOriginal;
 
-    @Column(name = "nombre_PO")
+    @Column(name = "nombre_po")
     private String nombreProductoOriginal;
 
-    @Column(name = "precio_PO")
+    @Column(name = "imagen_po")
+    private String imagenProductoOriginal;
+
+    @Column(name = "precio_po")
     private Integer precioProductoOriginal;
 
-    @Column(name = "durabilidad_PO")
+    @Column(name = "durabilidad_po")
     private Double durabilidadProductoOriginal;
 
-    @Column(name = "descripción_PO")
+    @Column(name = "descripcion_po")
     private String descripcionProductoOriginal;
 
     @CreationTimestamp

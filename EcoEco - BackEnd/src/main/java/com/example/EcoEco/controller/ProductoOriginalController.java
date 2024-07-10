@@ -57,6 +57,7 @@ public class ProductoOriginalController {
         if (productoOriginalOptional.isPresent()) {
             ProductoOriginal productoOriginal = productoOriginalOptional.get();
             productoOriginal.setNombreProductoOriginal(productoOriginalDetails.getNombreProductoOriginal());
+            productoOriginal.setImagenProductoOriginal(productoOriginalDetails.getImagenProductoOriginal());
             productoOriginal.setPrecioProductoOriginal(productoOriginalDetails.getPrecioProductoOriginal());
             productoOriginal.setDurabilidadProductoOriginal(productoOriginalDetails.getDurabilidadProductoOriginal());
             productoOriginal.setDescripcionProductoOriginal(productoOriginalDetails.getDescripcionProductoOriginal());
