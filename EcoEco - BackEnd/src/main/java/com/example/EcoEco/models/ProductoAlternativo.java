@@ -18,25 +18,27 @@ public class ProductoAlternativo {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private long idProductoAlternativo;
 
-    @Column(name = "nombre_PA")
+    @Column(name = "nombre_pa")
     private String nombreProductoAlternativo;
 
+    @Column(name = "imagen_pa")
+    private String imagenProductoAlternativo;
 
-    @Column(name = "durabilidad_PA")
+    @Column(name = "durabilidad_pa")
     private int durabilidadProductoAlternativo;
 
-    @Column(name = "descripción_PA")
+    @Column(name = "descripcion_pa")
     private String descripcionProductoAlternativo;
 
-    @Column(name = "precio_PA")
-    private Double precioProductoProductoAlternativo;
+    @Column(name = "precio_pa")
+    private Double precioProductoAlternativo;
 
     @CreationTimestamp
     private LocalDateTime fechaCreacion;
 
-   @JsonIgnore
+    @JsonIgnore
     @ManyToOne()
-    @JoinColumn(name= "Prod_original_id")
+    @JoinColumn(name= "prod_original_id")
     private ProductoOriginal productoOriginal;
 
 }

@@ -57,9 +57,10 @@ public class ProductoAlternativoController {
         if (productoAlternativoOptional.isPresent()) {
             ProductoAlternativo productoAlternativo = productoAlternativoOptional.get();
             productoAlternativo.setNombreProductoAlternativo(productoAlternativoDetails.getNombreProductoAlternativo());
+            productoAlternativo.setImagenProductoAlternativo((productoAlternativoDetails.getImagenProductoAlternativo()));
             productoAlternativo.setDurabilidadProductoAlternativo(productoAlternativoDetails.getDurabilidadProductoAlternativo());
             productoAlternativo.setDescripcionProductoAlternativo(productoAlternativoDetails.getDescripcionProductoAlternativo());
-            productoAlternativo.setPrecioProductoProductoAlternativo(productoAlternativoDetails.getPrecioProductoProductoAlternativo());
+            productoAlternativo.setPrecioProductoAlternativo(productoAlternativoDetails.getPrecioProductoAlternativo());
             productoAlternativo.setProductoOriginal(productoAlternativoDetails.getProductoOriginal());
             // No actualizamos la fecha de creación
             ProductoAlternativo updatedProductoAlternativo = productoAlternativoService.saveProductoAlternativo(productoAlternativo);
