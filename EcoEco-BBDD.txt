@@ -1,0 +1,36 @@
+use proyecto7_7;
+
+INSERT IGNORE INTO categorias(cat_nombre)
+Values ('Aseo y Limpieza'),
+       ('Decoración'),
+       ('Higiene Personal'),
+       ('Hogar y Cocina');
+
+INSERT IGNORE INTO producto_original(nombre_po , imagen_po ,  precio_po , durabilidad_po , fecha_creacion, descripcion_po , id_categoria)
+VALUES ('Toalla Higiénica Desechable', '/toalla-higienica desechable.png',  3626, 16, CURRENT_TIMESTAMP	, 'Toallas menstruales desechables, paquete de 16 unidades. Hechas de fibras de plástico y algodón.', 3),
+       ('Afeitadora Desechable', '/afeitadora-desechable.png', 5526, 8, CURRENT_TIMESTAMP	, 'Afeitadoras Desechables, paquete de 2 unidades. Hechas de plástico y acero inoxidable.',3),
+       ('Cepillo de dientes', '/cepillo-de-dientes.png', 3550, 180, CURRENT_TIMESTAMP, 'Cepillo de dientes desechable, duración 3 meses . Hecho de Plástico y Nylon.', 3),
+       ('Rollo de papel mantequilla','/rollo-de-papel-mantequilla.png', 2783, 25, CURRENT_TIMESTAMP, 'Rollo de papel mantequilla de 10 metros. Papel tratado con silicona.',4),
+       ('Rollo de alusa plástica', '/rollo-de-alusa-plástica.png', 1827, 50, CURRENT_TIMESTAMP, 'Rollo de alusa plástica de 20 metros. Hecho de plástico polietileno.',4),
+       ('Cubiertos plásticos desechables', '/cubiertos-plásticos-desechables.png', 1899, 100, CURRENT_TIMESTAMP,'Cubiertos plásticos desechables, paquete de 100 unidades. Hechos de poliestireno y polipropileno.', 4),
+       ('Vasos plásticos desechables', '/vasos-plásticos-desechables.png', 1733, 50, CURRENT_TIMESTAMP,'Vasos desechables, paquete de 50 unidades. Hechos de poliestireno o PET.', 4),
+       ('Esponjas para loza', '/esponjas-para-loza.png', 2493,  30, CURRENT_TIMESTAMP,'Esponjas para lavar loza, paquete de 2 unidades. Hechas de poliuretano y nylon.', 1),
+       ('Traperos desechables', '/traperos-desechables.png', 2807, 10, CURRENT_TIMESTAMP,'Traperos húmedos desechables, paquete de 10 unidades. Hechos de tela de poliester.', 1),
+       ('Globos', '/globos.png', 2256, 50, CURRENT_TIMESTAMP,'Globos de fiesta, paquete de 50 unidades. Hechos de poliuretano, PET o latex.', 2);
+
+INSERT IGNORE INTO producto_alternativo(nombre_pa , imagen_pa , precio_pa , durabilidad_pa , descripcion_pa , prod_original_id, fecha_creacion)
+VALUES ('Toalla Higiénica de Tela', '/toalla-higiénica-de-tela.png', 6483, 100, 'Toalla Higiénica de Tela Lavable y reutilizable, duración 2 años. Hecha de microfibra, bambú, algodón.', 1, CURRENT_TIMESTAMP),
+       ('Copa Menstrual', '/copa-menstrual.png', 11223 , 1800, 'Copa de Silicona grado médico, duración hasta 10 años', 1, CURRENT_TIMESTAMP),
+       ('Afeitadora Cuchilla Intercambiables', '/afeitadora-cuchilla-intercambiables.png', 14660 , 1000, 'Afeitadora clásica de metal, con cuchillas de acero inoxidable intercambiables.', 2, CURRENT_TIMESTAMP),
+       ('Afeitadora Eléctrica', '/afeitadora-eléctrica.png', 23990, 2000, 'Afeitadora eléctrica recargable. Duración entre 5 a 10 años según la frecuencia de uso.', 2, CURRENT_TIMESTAMP),
+       ('Cepillo de dientes de Bambú', '/cepillo-de-dientes-de-bambu.png', 2496, 100, 'Cepillo de dientes con mango de mambú y cerdas biodegradables. Libre de plástico.', 3, CURRENT_TIMESTAMP),
+       ('Cepillo de dientes Eléctrico', '/cepillo-de-dientes-electrico.png', 21423, 4000, 'Cepillo de dientes eléctrico recargable con cabezales intercambiables. Duración hasta 5 años. Duración de cabezales 3 meses.', 3, CURRENT_TIMESTAMP),
+       ('Mat de silicona Reutilizable', '/mat-de-silicona-reutilizable.png', 4526, 150, 'Mat de silicona reutilizable apta para cocina. Hecha de silicona de grado alimenticio.', 4, CURRENT_TIMESTAMP),
+       ('Envoltura Encerada', '/envoltura-encerada.png', 8830, 100, 'Envoltura encerada especial para alimentos. Hecha de tela de algodón impregnada en cera de abeja, aceite de jojoba y resina de arbol.', 5, CURRENT_TIMESTAMP),
+       ('Cubiertos Compostables', '/cubiertos-compostables.png', 4290, 100, 'Cubiertos desechables compostables. Hechos de madera.', 6, CURRENT_TIMESTAMP),
+       ('Vasos de papel desechables', '/vasos-de-papel-desechables.png', 5713, 100, 'Vasos de polipapel desechables.', 7, CURRENT_TIMESTAMP),
+       ('Vasos Reutilizables', '/vasos-reutilizables.png', 11290, 4000, 'Vasos de fibra de trigo reutilizable y lavable. Formato pack de 4 vasos. Libre de plástico y BPA.', 7, CURRENT_TIMESTAMP),
+       ('Esponja de fibras vegetales', '/esponja-de-fibras-vegetales.png', 2830, 150, 'Esponja hecha de fibras de planta luffa. Biodegradable.', 8, CURRENT_TIMESTAMP),
+       ('Trapero reutilizable', '/trapero-reutilizable.png', 2270, 200, 'Trapero absorbente, lavable. Hecho de microfibra, algodón y poliester.', 9, CURRENT_TIMESTAMP),
+       ('Esferas de Papel decorativas', '/esferas-de-papel-decorativas.png', 1660, 10, 'Adorno Esfera de papel 35cm patrón panal de abejas. Plegable y reutilizable.', 10, CURRENT_TIMESTAMP);
+       
